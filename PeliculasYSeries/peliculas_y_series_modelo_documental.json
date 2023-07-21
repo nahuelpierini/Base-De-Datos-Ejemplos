@@ -1,0 +1,49 @@
+{
+    "pelicula":[
+        {
+            "titulo": "",
+            "duracion":"",
+            "sinopsis": "",
+            "fecha_estreno":"",
+            "estudio_cinematografico":"",
+            "director":"",
+            "pais":["pais1","pais2"],
+            "trailer":"",
+            "actor":["actor1","actor2"],
+            "genero":["genero1","genero2"]
+        }
+
+    ],
+    "serie":[
+        {
+            "titulo": "",
+            "sinopsis": "",
+            "fecha_estreno":"",
+            "estudio_cinematografico":"",
+            "pais":"",
+            "actor":["actor1","actor2"],
+            "genero":["genero1","genero2"],
+            "temporada":[
+                {          
+                "id_temporada":"",
+                "fecha_estreno":"",
+                "titulo":"",
+                "trailer":"",
+                "capitulo":[
+                    {
+                        "id_capitulo":"",
+                        "titulo":"",
+                        "director":"",
+                        "actor":["actor1","actor2"],
+                        "duracion":"",
+                        "fecha_estreno":"",
+                        "trailer":""
+
+                    }
+                ]
+                }
+            ]
+            
+        }
+    ]
+}

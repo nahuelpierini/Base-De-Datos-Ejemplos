@@ -19,6 +19,7 @@
 - PK: Primary Key
 - FK: Foreign Key
 - UQ: Unique Attribute
+- AI: Auto Increment
 - ED: Entidad de Datos
 - EP: Entidad Pivote
 - EC: Entidad Catálogo

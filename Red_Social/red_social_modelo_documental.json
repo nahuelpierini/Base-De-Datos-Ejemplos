@@ -1,0 +1,46 @@
+{
+    "usuario":[
+        {
+            "nombre": "",
+            "apellido": "",
+            "nombre_usuario": "",
+            "email": "",
+            "contrasena": "",
+            "fecha_nacimiento": "",
+            "telefono": "",
+            "biografia": "",
+            "avatar": "",
+            "genero": "",
+            "pais": "",
+            "url_web":"",
+            "fecha_creacion":"",
+            "publicacion":[1,2,3],
+            "seguidores": ["@usuario1","@usuario2","@usuario3"],
+            "seguidos":["@usuario1","@usuario2","@usuario3"]
+        }
+    ],
+    "publicacion":[
+        {
+            "id_publicacion":"",
+            "fecha_creacion":"",
+            "usuario": "",
+            "descripcion":"",
+            "foto":"",
+            "me_gusta":["@usuario1","@usuario2","@usuario3"],
+            "comentario": [
+                {
+                    "id_comentario": "",
+                    "fecha_creacion": "",
+                    "usuario": ""
+                },
+                {
+                    "id_comentario": "",
+                    "fecha_creacion": "",
+                    "usuario": ""
+                }
+            ]
+
+        }
+
+    ]
+}

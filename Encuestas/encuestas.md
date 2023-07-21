@@ -4,7 +4,7 @@
 
 ### encuesta **(ED)**
 
-- id_encuesta **(PK)**
+- id_encuesta **(PK)** **(AI)**
 - id_pregunta **(FK)**
 - nombre
 - descripcion
@@ -14,19 +14,19 @@
 
 ### pregunta **(ED)**
 
-- id_pregunta **(PK)**
+- id_pregunta **(PK)** **(AI)**
 - pregunta
 
 ### respuesta **(ED)**
 
-- id_respuesta **(PK)**
+- id_respuesta **(PK)** **(AI)**
 - id_pregunta **(FK)**
 - respuesta
 - es_correcta
 
 ### encuestado **(ED)**
 
-- id_encuestado **(PK)**
+- id_encuestado **(PK)** **(AI)**
 - nombre
 - apellido
 - edad
@@ -34,7 +34,7 @@
 
 ### resultado **(ED|EP)**
 
-- id_resutado **(PK)**
+- id_resutado **(PK)** **(AI)**
 - id_encuesta **(FK)**
 - id_encuestado **(FK)**
 - cantidad_preguntas

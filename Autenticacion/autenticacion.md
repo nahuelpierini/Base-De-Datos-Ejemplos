@@ -3,7 +3,7 @@
 ## Lista de Entidades
 
 ### usuario 
-- id_usuario **(PK)**
+- id_usuario **(PK)** **(AI)**
 - nombre
 - apellido
 - email **(UQ)**
@@ -12,25 +12,25 @@
 
 
 ### rol
-- id_rol **(PK)**
+- id_rol **(PK)** **(AI)**
 - nombre
 - descripcion
 - id_usuario **(FK)**
 - id_permiso **(FK)**
 
 ### permiso
-- id_permiso **(PK)**
+- id_permiso **(PK)** **(AI)**
 - nombre
 - descripcion
 - id_rol **(FK)**
 
-### rol_permiso
-- id_usuario_permiso **(PK)**
+### rol_permiso 
+- id_usuario_permiso **(PK)** **(AI)**
 - id_rol **(FK)**
 - id_usuario **(FK)**
 
 ### usuario_rol
-id_usuario_rol **(PK)**
+id_usuario_rol **(PK)** **(AI)**
 id_rol **(FK)**
 id_usuario **(FK)**
 
@@ -60,8 +60,8 @@ id_usuario **(FK)**
 
 ### rol_permiso
 
-1. CRUD a rol_permiso
+1. CRUD a rol_permiso menos UPDATE
 
 ### usuario_rol
 
-1. CRUD a usuario_rol 
+1. CRUD a usuario_rol menos UPDATE
