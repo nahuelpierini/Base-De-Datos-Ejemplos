@@ -157,7 +157,7 @@ CREATE TABLE `suscription_type`
  `name`        varchar(45) NOT NULL ,
  `description` varchar(45) NOT NULL ,
  `id_activity` int NOT NULL ,
- `cost` int NOT NULL 
+ `cost`        int NOT NULL ,
 
 PRIMARY KEY (`id`),
 KEY `FK_1` (`id_activity`),
@@ -200,30 +200,31 @@ CREATE TABLE `time`
 PRIMARY KEY (`id`)
 );
 
+
 CREATE TABLE `schedule`
 (
  `id`      int NOT NULL AUTO_INCREMENT ,
  `id_time` int NOT NULL ,
- `int_day`     int NOT NULL ,
+ `int_day` int NOT NULL ,
 
 PRIMARY KEY (`id`),
 KEY `FK_1` (`id_time`),
 CONSTRAINT `FK_68` FOREIGN KEY `FK_1` (`id_time`) REFERENCES `time` (`id`),
-KEY `FK_2` (`int`),
-CONSTRAINT `FK_69` FOREIGN KEY `FK_2` (`int`) REFERENCES `day` (`int`)
+KEY `FK_2` (`int_day`),
+CONSTRAINT `FK_69` FOREIGN KEY `FK_2` (`int_day`) REFERENCES `day` (`int`)
 );
 
-CREATE TABLE `schedule`
+CREATE TABLE `activity_schedule`
 (
- `id`      int NOT NULL AUTO_INCREMENT ,
- `id_time` int NOT NULL ,
- `int`     int NOT NULL ,
+ `id`          int NOT NULL AUTO_INCREMENT ,
+ `id_activity` int NOT NULL ,
+ `id_schedule` int NOT NULL ,
 
 PRIMARY KEY (`id`),
-KEY `FK_1` (`id_time`),
-CONSTRAINT `FK_68` FOREIGN KEY `FK_1` (`id_time`) REFERENCES `time` (`id`),
-KEY `FK_2` (`int`),
-CONSTRAINT `FK_69` FOREIGN KEY `FK_2` (`int`) REFERENCES `day` (`int`)
+KEY `FK_1` (`id_activity`),
+CONSTRAINT `FK_70` FOREIGN KEY `FK_1` (`id_activity`) REFERENCES `activitie` (`id`),
+KEY `FK_2` (`id_schedule`),
+CONSTRAINT `FK_71` FOREIGN KEY `FK_2` (`id_schedule`) REFERENCES `schedule` (`id`)
 );
 
 CREATE TABLE `traineer_activity_schedule`
