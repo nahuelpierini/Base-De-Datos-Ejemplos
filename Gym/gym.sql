@@ -157,6 +157,7 @@ CREATE TABLE `suscription_type`
  `name`        varchar(45) NOT NULL ,
  `description` varchar(45) NOT NULL ,
  `id_activity` int NOT NULL ,
+ `cost` int NOT NULL 
 
 PRIMARY KEY (`id`),
 KEY `FK_1` (`id_activity`),
@@ -203,7 +204,7 @@ CREATE TABLE `schedule`
 (
  `id`      int NOT NULL AUTO_INCREMENT ,
  `id_time` int NOT NULL ,
- `int`     int NOT NULL ,
+ `int_day`     int NOT NULL ,
 
 PRIMARY KEY (`id`),
 KEY `FK_1` (`id_time`),
