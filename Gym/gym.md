@@ -4,8 +4,7 @@
 
 1. Sistema exclusivo para el uso en Argentina.
 1. Gestión de red de gimnasios exclusivos para la gente registrada.
-1. Los clientes tienen entrada a todos los gimnasios con todas sus actividades.
-1. Se ofrecen 4 tipos de suscripciones: mensual, trimestral, semestral y anual.
+1. Hay 3 tipos de suscripcion: Plata - Gold - Platinium. Cada suscripción tiene un grupo de gimnasios adheridos. 
 1. Cada gimnasio tendrá su personal administrativo.
 1. Los entrenadores podran trabajar en tantos gimansios como quieran.
 1. Cada actividad contará con un horario y un profesor asociado.
